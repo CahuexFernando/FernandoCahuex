@@ -91,23 +91,37 @@ a:visited{
     -moz-box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.75)
 }
+.arriba{
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
 .titulo1{
     color: var(--color1);
-    margin-left: 40%;
     font-size: 40px;
+    margin-right: 180px;
+}
+.imagen1{
+    width: 90px;
+    height: auto;
+    margin-right: 70px;
 }
 .frase{
-    height: 250px;
+    height: 220px;
     width: auto;
-    margin-left: 1000px;
-    margin-top: 150px;
+    margin-right: 300px;
+    margin-left: 300px;
+    margin-top: 100px;
     padding-top: 100px;
-    background-color: rgba(163, 163, 163, 0.541);
+    background-image: url(../imagenes/matix.jpg);
 }
 h1{
     margin-left: 20px;
     margin-right: 20px;
 }
+
 
 /*Seccion de telefono*/
 @media only screen and (max-width:768px) {
@@ -150,7 +164,17 @@ h1{
     }
     .titulo1{
         font-size: 20px;
-        margin-left: 92px;
+        width: 300px;
+        height: auto;
     }
+    .arriba{
+        flex-direction: column;
+
+    }
+    .imagen1{
+        width: 40px;
+        margin-left: 80%;
+    }
+
 
 }
